@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind screens;
+@tailwind utilities;
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #1c1917; // stone-900
+}
