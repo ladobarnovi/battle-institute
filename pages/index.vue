@@ -51,15 +51,18 @@ export default {
     const arrCourses: ICardDataProp[] = [
       {
         name: "Course 1",
-        img: "/images/slide-img-1.jpg"
+        img: "/images/slide-img-1.jpg",
+        url: "/course/1"
       },
       {
         name: "Course 2",
-        img: "/images/slide-img-2.jpg"
+        img: "/images/slide-img-2.jpg",
+        url: "/course/2"
       },
       {
         name: "Course 3",
-        img: "/images/slide-img-3.jpg"
+        img: "/images/slide-img-3.jpg",
+        url: "/course/3"
       }
     ];
 
