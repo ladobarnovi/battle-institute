@@ -1,11 +1,11 @@
 <template>
-  <div class="main-navigation w-full bg-stone-700">
+  <div class="main-navigation w-full">
     <div class="wrapper py-2 w-full">
       <div class="flex justify-center gap-16 text-white">
-        <a href="">All Videos</a>
-        <a href="">Categories</a>
-        <a href="">Instructors</a>
-        <a href="">Promotions</a>
+        <a class="text-red-600 font-semibold uppercase" href="">All Videos</a>
+        <a class="text-red-600 font-semibold uppercase" href="">Categories</a>
+        <a class="text-red-600 font-semibold uppercase" href="">Instructors</a>
+        <a class="text-red-600 font-semibold uppercase" href="">Promotions</a>
       </div>
     </div>
   </div>

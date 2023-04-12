@@ -1,5 +1,5 @@
 <template>
-  <header class="h-16 bg-stone-800 text-white">
+  <header class="h-16 bg-[#1a1a1a] text-white">
     <div class="px-4 h-full">
       <div class="flex items-center h-full gap-4">
         <div class="logo">
