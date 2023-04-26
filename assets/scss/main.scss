@@ -3,9 +3,11 @@
 @tailwind screens;
 @tailwind utilities;
 
+$base-color: #272E3A;
+
 
 html, body {
   width: 100%;
   height: 100%;
-  background-color: #1c1917; // stone-900
+  background-color: $base-color; 
 }

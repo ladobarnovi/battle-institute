@@ -1,7 +1,7 @@
 <template>
-  <div class="main-navigation w-full bg-stone-700">
-    <div class="wrapper py-2 w-full">
-      <div class="flex justify-center gap-16 text-white">
+  <div class="main-navigation w-full">
+    <div class="wrapper w-full">
+      <div class="flex justify-center gap-16 text-white bg-white/10 py-2">
         <a href="">All Videos</a>
         <a href="">Categories</a>
         <a href="">Instructors</a>

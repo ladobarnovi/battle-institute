@@ -1,9 +1,5 @@
 <template>
   <div id="course-page">
-    <header class="my-4 text-white">
-      <h1 class="text-4xl font-bold">Course Title</h1>
-      <h2 class="text-lg">by <a href="/instructor/craigjones">Craig Jones</a></h2>
-    </header>
 
     <div class="flex gap-8">
       <div class="player-container flex-grow">
@@ -22,7 +18,7 @@
             class="timestamp"
           >
             <button
-              class="px-8 py-4 w-full bg-stone-700 text-left"
+              class="px-8 py-4 w-full bg-base-color text-left text-main-content"
               @click="moveToTime(timestamp.timeSeconds)"
             >
               {{ timestamp.timeFormatted }} - {{ timestamp.label }}
@@ -32,15 +28,23 @@
       </div>
     </div>
 
-    <footer class="my-4 text-white">
-      <p class="text-2xl font-bold">About this course</p>
-      <p class="text-lg">Learn the B-Team bottom game, including how to use wrestling concepts, turtling, heisting, and more for a comprehensive system</p>
-      <ul class="list-disc ml-6">
-        <li>Force your opponents into a new style of grappling with stand ups, 4 point positions, turtle position, and more used to create action</li>
-        <li>See new positions that can revolutionize your bottom game, including the reverse Z guard and the false half guard</li>
-        <li>Craig is one of the most popular instructors in the world, with ADCC Medals & sustained elite competition success</li>
-        <li>Attack throws and submissions, with options for reversals, leg locks, back takes, and more across 6-volumes</li>
-      </ul>
+    <footer class="my-4 text-white space-y-4">
+    <div>
+      <h1 class="text-4xl font-bold text-main-content">Lorem ipsum dolor sit amet</h1>
+      <h2 class="text-lg text-main-content">In metus vulputate eu scelerisque. Id nibh tortor id aliquet lectus proin nibh nisl. Vitae auctor eu augue ut lectus.</h2>
+      <h2 class="text-lg text-main-content">Created by <a href="/instructor/craigjones">Craig Jones</a></h2>
+    </div><div>
+    <p class="text-2xl font-bold text-main-content">About this course</p>
+      <p class="list-disc text-main-content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Diam volutpat commodo sed egestas. Vel pharetra vel turpis nunc eget lorem dolor sed. Faucibus vitae aliquet nec ullamcorper sit.
+      Gravida quis blandit turpis cursus in hac habitasse. Velit egestas dui id ornare arcu odio. Adipiscing enim eu turpis egestas pretium aenean pharetra.
+      Pulvinar pellentesque habitant morbi tristique senectus. Consectetur purus ut faucibus pulvinar. Lectus proin nibh nisl condimentum.
+      Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Etiam dignissim diam quis enim lobortis.
+      Urna nunc id cursus metus aliquam eleifend mi. Purus viverra accumsan in nisl. Id ornare arcu odio ut sem nulla. Lorem mollis aliquam ut porttitor.
+      Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit.
+      </p>
+      </div>
     </footer>
   </div>
 </template>

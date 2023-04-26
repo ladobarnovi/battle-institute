@@ -1,4 +1,4 @@
-<template>
+$base-color:<template>
   <div class="card-list">
     <h2 class="text-2xl font-bold text-white mb-4">{{ title }}</h2>
     <div class="flex gap-4">
