@@ -19,7 +19,7 @@
       </div>
     </div>
   </header>
-</template>
+</template>max-width
 
 <script>
 import SearchBar from "~/components/SearchBar/SearchBar";
