@@ -39,23 +39,27 @@
       <div class="px-8 py-4 text-xl text-main-content font-bold">Course content</div>
       <ul class="text-white flex flex-col text-lg font-bold">
         <li v-for="sec in sections">
-          <button class="w-full h-[72px] text-main-content text-left px-8 border-t border-main-content bg-white/5"> {{sec.header}}</button>
+          <button class="w-full h-[72px] text-main-content text-left px-8 border-t border-main-content bg-white/5">
+            <p class="">{{sec.header}}</p>
+            <p class="font-normal text-base">{{sec.duration}} - {{sec.parts}} parts</p>
+          </button>
+            <ul v-if="sec.timestamps" class="player-timestamps text-white flex flex-col gap-1 text-lg">
+            <li
+              v-for="timestamp in sec.timestamps"
+              class="timestamp"
+            >
+              <button
+                class="px-8 py-4 font-normal text-main-content"
+                @click="moveToTime(timestamp.timeSeconds)"
+              >
+                {{ timestamp.timeFormatted }} - {{ timestamp.label }}
+              </button>
+            </li>
+          </ul>
         </li>
       </ul>
 
-        <ul class="player-timestamps text-white flex flex-col gap-1 text-lg">
-          <li
-            v-for="timestamp in arrTimestamps"
-            class="timestamp"
-          >
-            <button
-              class="px-8 py-4 w-full text-left text-main-content"
-              @click="moveToTime(timestamp.timeSeconds)"
-            >
-              {{ timestamp.timeFormatted }} - {{ timestamp.label }}
-            </button>
-          </li>
-        </ul>
+
       </div>
     </div>
 
@@ -75,67 +79,57 @@ export default {
   setup() {
     const arrTimestamps = [
       {
-        timeFormatted: "0 : 10",
+        timeFormatted: "0:10",
         timeSeconds: 10,
-        label: "Intro"
+        label: "Intro",
       },
       {
-        timeFormatted: "0 : 20",
-        timeSeconds: 20,
+        timeFormatted: "0:25",
+        timeSeconds: 25,
         label: "Topic 2"
       },
       {
-        timeFormatted: "0 : 30",
+        timeFormatted: "0:30",
         timeSeconds: 30,
         label: "Topic 3"
       },
       {
-        timeFormatted: "0 : 20",
-        timeSeconds: 20,
-        label: "Topic 2"
-      },
-      {
-        timeFormatted: "0 : 30",
-        timeSeconds: 30,
-        label: "Topic 3"
-      },
-      {
-        timeFormatted: "0 : 20",
-        timeSeconds: 20,
-        label: "Topic 2"
-      },
-      {
-        timeFormatted: "0 : 30",
-        timeSeconds: 30,
-        label: "Topic 3"
-      },
-      {
-        timeFormatted: "0 : 20",
-        timeSeconds: 20,
-        label: "Topic 2"
-      },
-      {
-        timeFormatted: "0 : 30",
-        timeSeconds: 30,
-        label: "Topic 3"
+        timeFormatted: "0:35",
+        timeSeconds: 35,
+        label: "Conclusion"
       }
     ];
 
     const sections = [
       {
-        header: "Section 1: Intro"
+        header: "Section 1: Intro",
+        duration: "20min",
+        parts: 1,
+        timestamps: null
       },
       {
-        header: "Section 2: Topic 1"
+        header: "Section 2: Topic 1",
+        duration: "42min",
+        parts: 2,
+        timestamps: null
       },
       {
-        header: "Section 3: Topic 2"
+        header: "Section 3: Topic 2",
+        duration: "1hr 26min",
+        parts: 6,
+        timestamps: arrTimestamps
       },
       {
-        header: "Section 4: Topic 3"
+        header: "Section 4: Topic 3",
+        duration: "55min",
+        parts: 3,
+        timestamps: null
       },
       {
-        header: "Section 5: Outro"
+        header: "Section 5: Outro",
+        duration: "4min",
+        parts: 1,
+        timestamps: null
       }
     ];
 
@@ -155,7 +149,6 @@ export default {
     }
 
     return {
-      arrTimestamps,
       sections,
       onVideoElementMounted,
       moveToTime
