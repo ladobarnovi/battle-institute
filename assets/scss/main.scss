@@ -3,11 +3,15 @@
 @tailwind screens;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+
 $base-color: #272E3A;
 
 
 html, body {
   width: 100%;
   height: 100%;
-  background-color: $base-color; 
+  background-color: $base-color;
+  font-family: 'Lato', sans-serif;
+
 }

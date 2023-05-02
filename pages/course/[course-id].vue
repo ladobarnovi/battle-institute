@@ -14,7 +14,7 @@
             />
         </div>
 
-          <footer class="my-4 text-white space-y-4 p-6">
+          <footer class="text-white space-y-4 p-6">
               <div>
                 <h1 class="text-4xl font-bold text-main-content">Lorem ipsum dolor sit amet</h1>
                 <h2 class="text-lg text-main-content">In metus vulputate eu scelerisque. Id nibh tortor id aliquet lectus proin nibh nisl. Vitae auctor eu augue ut lectus.</h2>
@@ -36,7 +36,14 @@
       </div>
 
       <div class="player-nav basis-1/4 border-l border-main-content/10">
-        <ul class="player-timestamps text-white flex flex-col gap-1">
+      <div class="px-8 py-4 text-xl text-main-content font-bold">Course content</div>
+      <ul class="text-white flex flex-col text-lg font-bold">
+        <li v-for="sec in sections">
+          <button class="w-full h-[72px] text-main-content text-left px-8 border-t border-main-content bg-white/5"> {{sec.header}}</button>
+        </li>
+      </ul>
+
+        <ul class="player-timestamps text-white flex flex-col gap-1 text-lg">
           <li
             v-for="timestamp in arrTimestamps"
             class="timestamp"
@@ -113,6 +120,25 @@ export default {
         label: "Topic 3"
       }
     ];
+
+    const sections = [
+      {
+        header: "Section 1: Intro"
+      },
+      {
+        header: "Section 2: Topic 1"
+      },
+      {
+        header: "Section 3: Topic 2"
+      },
+      {
+        header: "Section 4: Topic 3"
+      },
+      {
+        header: "Section 5: Outro"
+      }
+    ];
+
     const player = shallowRef<VideoJsPlayer>();
 
     function onVideoElementMounted(args: any): void {
@@ -130,6 +156,7 @@ export default {
 
     return {
       arrTimestamps,
+      sections,
       onVideoElementMounted,
       moveToTime
     }
@@ -148,7 +175,7 @@ export default {
   }
   .video-player {
     width: 100%;
-    height: 500px;
+    height: 800px;
   }
 
   .player-nav {
