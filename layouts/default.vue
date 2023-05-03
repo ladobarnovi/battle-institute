@@ -3,7 +3,7 @@
     <MainHeader />
     <MainNavigation />
 
-    <div class="container-none">
+    <div class="">
       <slot />
     </div>
 

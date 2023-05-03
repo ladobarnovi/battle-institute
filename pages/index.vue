@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="home" class="container mx-auto">
     <div class="py-8">
       <div class="slider-container">
         <div class="rounded-xl overflow-hidden">
