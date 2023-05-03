@@ -16,20 +16,47 @@
 
           <footer class="text-white space-y-4 p-6">
               <div>
-                <h1 class="text-4xl font-bold text-main-content">Lorem ipsum dolor sit amet</h1>
-                <h2 class="text-lg text-main-content">In metus vulputate eu scelerisque. Id nibh tortor id aliquet lectus proin nibh nisl. Vitae auctor eu augue ut lectus.</h2>
-                <h2 class="text-lg text-main-content">Created by <a class="font-bold underline" href="/instructor/craigjones">Craig Jones</a></h2>
+                <h1 class="text-4xl font-bold text-main-content">First Aid Course for Combat Troops</h1>
+                <h2 class="text-lg text-main-content">First Aid course for combat situations suitable for all levels.</h2>
+                <h2 class="text-lg text-main-content">Created by <a class="font-bold underline text-link-color" href="/instructor/craigjones">Lado Barnovi</a></h2>
               </div>
               <div class="border-t border-main-content/20 pt-2">
                 <p class="text-2xl font-bold text-main-content">About this course</p>
                 <p class="list-disc text-main-content mt-1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Diam volutpat commodo sed egestas. Vel pharetra vel turpis nunc eget lorem dolor sed. Faucibus vitae aliquet nec ullamcorper sit.
-                  Gravida quis blandit turpis cursus in hac habitasse. Velit egestas dui id ornare arcu odio. Adipiscing enim eu turpis egestas pretium aenean pharetra.
-                  Pulvinar pellentesque habitant morbi tristique senectus. Consectetur purus ut faucibus pulvinar. Lectus proin nibh nisl condimentum.
-                  Rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Etiam dignissim diam quis enim lobortis.
-                  Urna nunc id cursus metus aliquam eleifend mi. Purus viverra accumsan in nisl. Id ornare arcu odio ut sem nulla. Lorem mollis aliquam ut porttitor.
-                  Vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit.
+                  Lesson 1: Introduction to First Aid
+
+Objectives: Understand the importance of first aid in combat situations, and the basic principles of first aid.
+Topics covered: Definition of first aid, importance of first aid in the field, legal and ethical considerations, primary survey, and the ABCDE approach.
+
+Lesson 2: Basic Life Support
+
+Objectives: Understand how to provide basic life support to injured soldiers, including airway management, breathing, and circulation.
+Topics covered: Clearing the airway, performing CPR, using an Automated External Defibrillator (AED), controlling bleeding, and shock management.
+
+Lesson 3: Wound Management
+
+Objectives: Understand how to manage common battlefield injuries, including gunshot wounds, shrapnel wounds, and burns.
+Topics covered: Recognizing and assessing injuries, dressing and bandaging wounds, controlling bleeding, treating burns, and wound irrigation.
+
+Lesson 4: Environmental Emergencies
+
+Objectives: Understand how to manage environmental emergencies, including heat injuries and cold injuries.
+Topics covered: Recognizing and assessing environmental emergencies, managing heat exhaustion and heat stroke, hypothermia and frostbite, and prevention of environmental emergencies.
+
+Lesson 5: Tactical Combat Casualty Care (TCCC)
+
+Objectives: Understand the principles of TCCC, and how to apply them in combat situations.
+Topics covered: History and evolution of TCCC, phases of care, airway management, hemorrhage control, shock management, and battlefield medicine.
+
+Lesson 6: Integration and Practice
+
+Objectives: Integrate all previous lessons and practice skills in realistic scenarios.
+Topics covered: Simulated scenarios, stress and time management, debriefing and evaluation.
+This curriculum can be structured as a series of videos or as a combination of videos and in-person training sessions. Visual aids such as diagrams, animations, and demonstrations should be included to enhance the learning experience.
+
+Note: First Aid is a critical skill set for soldiers in the field. It should be taught by certified instructors with appropriate training and experience, and soldiers should always prioritize their own safety and that of others while providing first aid.
+
+
                 </p>
                </div>
          </footer>
@@ -80,52 +107,63 @@ export default {
       {
         timeFormatted: "0:10",
         timeSeconds: 10,
-        label: "Intro",
+        label: "Definition of first aid",
       },
       {
         timeFormatted: "0:25",
         timeSeconds: 25,
-        label: "Topic 2"
+        label: "Importance of first aid in the field"
       },
       {
         timeFormatted: "0:30",
         timeSeconds: 30,
-        label: "Topic 3"
+        label: "Legal and ethical considerations"
+      },
+      {
+        timeFormatted: "0:35",
+        timeSeconds: 32,
+        label: "Primary survey"
       },
       {
         timeFormatted: "0:35",
         timeSeconds: 35,
-        label: "Conclusion"
+        label: "The ABCDE approach"
       }
     ];
 
     const sections = [
       {
-        header: "Section 1: Intro",
+        header: "Lesson 1: Introduction to First Aid",
         duration: "20min",
         parts: 1,
         timestamps: null
       },
       {
-        header: "Section 2: Topic 1",
+        header: "Lesson 2: Basic Life Support",
         duration: "42min",
         parts: 2,
         timestamps: null
       },
       {
-        header: "Section 3: Topic 2",
+        header: "Lesson 3: Wound Management",
         duration: "1hr 26min",
         parts: 6,
         timestamps: arrTimestamps
       },
       {
-        header: "Section 4: Topic 3",
+        header: "Lesson 4: Environmental Emergencies",
         duration: "55min",
         parts: 3,
         timestamps: null
       },
       {
-        header: "Section 5: Outro",
+        header: "Lesson 5: Tactical Combat Casualty Care (TCCC)",
+        duration: "4min",
+        parts: 1,
+        timestamps: null
+      },
+      {
+        header: "Lesson 6: Integration and Practice",
         duration: "4min",
         parts: 1,
         timestamps: null
