@@ -3,12 +3,10 @@
     <div class="px-4 h-full">
       <div class="flex items-center h-full gap-4">
         <div class="logo">
-<!--          <h1 class="text-2xl font-bold text-main-content">-->
-<!--            Battle Institute-->
-<!--          </h1>-->
-                <img src="/images/BI.svg" class="h-[170px]">
+          <a href="/">
+            <img src="/images/BI.svg" class="h-[170px]">
+          </a>
         </div>
-
         <SearchBar class="mr-auto" />
 
         <button class="log-in px-4 py-1 bg-main-content rounded-md">
