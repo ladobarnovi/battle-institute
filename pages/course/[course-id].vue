@@ -1,7 +1,7 @@
 <template>
   <div id="course-page">
 
-    <div class="flex flex-row h-[calc(100vh-104px)]">
+    <div class="flex flex-row min-h-[calc(100vh-104px)]">
       <div class="flex flex-col basis-3/4">
 
         <div class="player-container flex-grow">
