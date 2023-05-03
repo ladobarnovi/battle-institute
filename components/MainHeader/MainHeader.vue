@@ -8,7 +8,7 @@
           </h1>
         </div>
 
-        <SearchBar class="ml-auto" />
+        <SearchBar class="mr-auto" />
 
         <button class="log-in px-4 py-1 bg-main-content rounded-md">
           <span class="font-semibold text-base-color">Log In</span>
