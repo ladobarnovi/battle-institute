@@ -3,9 +3,10 @@
     <div class="px-4 h-full">
       <div class="flex items-center h-full gap-4">
         <div class="logo">
-          <h1 class="text-2xl font-bold text-main-content">
-            Battle Institute
-          </h1>
+<!--          <h1 class="text-2xl font-bold text-main-content">-->
+<!--            Battle Institute-->
+<!--          </h1>-->
+                <img src="/images/BI.svg" class="h-[170px]">
         </div>
 
         <SearchBar class="mr-auto" />
@@ -19,7 +20,7 @@
       </div>
     </div>
   </header>
-</template>max-width
+</template>
 
 <script>
 import SearchBar from "~/components/SearchBar/SearchBar";
