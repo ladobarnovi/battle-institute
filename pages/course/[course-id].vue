@@ -38,13 +38,13 @@
       <div class="player-nav basis-1/4 border-l border-main-content/10 bg-base-color-comp">
       <div class="px-8 py-4 text-xl text-main-content font-bold">Course content</div>
       <ul class="text-white flex flex-col text-lg font-bold">
-        <li v-for="sec in sections">
+        <li v-for="(sec,index) in sections">
           <button class="w-full h-[76px] text-main-content text-left px-8 border-t border-main-content/10 bg-accent-color-dark/20 focus:bg-accent-color-light/40"
-          @click="toggleTimestamps()">
+          @click="toggleTimestamps(index)">
             <p class="">{{sec.header}}</p>
             <p class="font-normal text-base">{{sec.duration}} - {{sec.parts}} parts</p>
           </button>
-            <ul v-if="sec.timestamps" id="timestamps" class="player-timestamps text-white flex flex-col gap-1 text-lg">
+            <ul v-if="sec.timestamps" :id="'timestamps' + index" class="player-timestamps text-white flex flex-col gap-1 text-lg">
               <li
                 v-for="timestamp in sec.timestamps"
                 class="timestamp">
@@ -147,8 +147,8 @@ export default {
       player.value.currentTime(seconds);
     }
 
-    function toggleTimestamps(): void {
-      const stamps = document.getElementById("timestamps");
+    function toggleTimestamps(idx: number): void {
+      const stamps = document.getElementById("timestamps" + idx);
       console.log("Currenly the element is " + stamps.style.display)
 
       if(stamps.style.display == "flex" || !stamps.style.display){
