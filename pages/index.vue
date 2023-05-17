@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="w-[95vw] mx-auto ">
+  <div id="home" class="w-[95vw] mx-auto">
     <div class="py-8">
       <div class="slider-container">
         <div class="rounded-xl overflow-hidden">
@@ -9,36 +9,40 @@
             <SwiperSlide>
               <div class="slide-wrapper relative">
                 <img src="/images/slide-img-1.jpg" alt="">
-                <p class="text-3xl">Slide 1</p>
+                <p class="text-3xl text-main-content mt-4">CQC in Action</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div class="slide-wrapper relative">
                 <img src="/images/slide-img-2.jpg" alt="">
-                <p class="text-3xl">Slide 2</p>
+                <p class="text-3xl text-main-content mt-4">TCCC</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div class="slide-wrapper relative">
                 <img src="/images/slide-img-3.jpg" alt="">
-                <p class="text-3xl">Slide 3</p>
+                <p class="text-3xl text-main-content mt-4">Basic Techniques and Drills</p>
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
       </div>
 
-      <CardList
-          class="mt-8"
-          :arr-cards-data="arrCourses"
-          title="Featured Courses"
-      />
-      <!--<CardList-->
-      <!--    class="mt-8"-->
-      <!--    :arr-cards-data="arrInstructors"-->
-      <!--    title="Featured Instructors"-->
-      <!--/>-->
     </div>
+  </div>
+  <div class="bg-base-color-comp w-full">
+        <CardList
+            class="pt-8 w-[95vw] mx-auto"
+            :arr-cards-data="arrCourses"
+            title="Featured Courses"
+        />
+  </div>
+   <div class="w-[95vw] mx-auto">
+        <CardList
+            class="pt-8 w-[95vw] mx-auto"
+            :arr-cards-data="arrInstructors"
+            title="Featured Courses"
+        />
   </div>
 </template>
 
@@ -65,16 +69,16 @@ export default {
 
     const arrInstructors: ICardDataProp[] = [
       {
-        name: "Instructor 1",
-        img: "/images/slide-img-1.jpg"
+        name: "Brian Bowen",
+        img: "/images/instructor/inst_1.jpg"
       },
       {
-        name: "Instructor 2",
-        img: "/images/slide-img-2.jpg"
+        name: "Tyler Romero",
+        img: "/images/instructor/inst_2.jpg"
       },
       {
-        name: "Instructor 3",
-        img: "/images/slide-img-3.jpg"
+        name: "Ed Webster",
+        img: "/images/instructor/inst_3.jpg"
       }
     ];
 
