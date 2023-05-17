@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="container mx-auto">
+  <div id="home" class="w-[95vw] mx-auto ">
     <div class="py-8">
       <div class="slider-container">
         <div class="rounded-xl overflow-hidden">
@@ -33,11 +33,11 @@
           :arr-cards-data="arrCourses"
           title="Featured Courses"
       />
-      <CardList
-          class="mt-8"
-          :arr-cards-data="arrInstructors"
-          title="Featured Instructors"
-      />
+      <!--<CardList-->
+      <!--    class="mt-8"-->
+      <!--    :arr-cards-data="arrInstructors"-->
+      <!--    title="Featured Instructors"-->
+      <!--/>-->
     </div>
   </div>
 </template>
@@ -50,16 +50,16 @@ export default {
   setup () {
     const arrCourses: ICardDataProp[] = [
       {
-        name: "Course 1",
-        img: "/images/slide-img-1.jpg"
+        name: "First aid fundamentals",
+        img: "/images/tn1.png"
       },
       {
-        name: "Course 2",
-        img: "/images/slide-img-2.jpg"
+        name: "Close quarter combat",
+        img: "/images/tn2.png"
       },
       {
-        name: "Course 3",
-        img: "/images/slide-img-3.jpg"
+        name: "First aid fundamentals",
+        img: "/images/tn1.png"
       }
     ];
 
