@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <div class="py-8">
-      <section class="h-[70vh] hover:bg-base-color-comp py-8">
+      <section class="h-[70vh] py-8">
       <div class="w-[85vw] mx-auto h-full flex flex-col">
           <h2 class="text-main-content text-4xl mb-4">Featured Courses</h2>
           <div class="grid grid-rows-2 grid-flow-col gap-4 grow">
