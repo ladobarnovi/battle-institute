@@ -8,13 +8,16 @@
           </a>
         </div>
         <SearchBar class="mr-auto" />
-
+        <MainNavigation />
+       <div class="flex gap-8 min-w-[360px]">
         <button class="log-in px-4 py-1 bg-main-content rounded-md">
           <span class="font-semibold text-base-color">Log In</span>
         </button>
         <button class="become-instructor px-4 py-1 border border-main-content rounded-md">
           <span class="font-semibold text-main-content">Become an Instructor</span>
         </button>
+      </div>
+
       </div>
     </div>
   </header>
