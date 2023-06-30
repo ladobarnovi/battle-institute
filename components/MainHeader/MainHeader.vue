@@ -42,11 +42,11 @@ export default {
 <style scoped lang="scss">
 
 .main-page-header{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/bg.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+//  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/banner/banner1.png");
+//  background-attachment: fixed;
+//  background-size: cover;
+//  background-position: center;
+//  height: 100vh;
 }
 
 header {
