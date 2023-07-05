@@ -1,7 +1,7 @@
 <template>
     <div id="home">
         <div class="">
-            <section class="slider-container">
+            <section class="slider-container bg-base-color-comp">
                 <div class="rounded-xl overflow-hidden">
                     <Swiper :loop="true">
                         <SwiperSlide>
