@@ -1,9 +1,8 @@
 <template>
   <div id="default-layout">
     <MainHeader />
-    <MainNavigation />
 
-    <div class="container mx-auto">
+    <div class="">
       <slot />
     </div>
 

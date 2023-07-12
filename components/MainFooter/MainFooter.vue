@@ -1,6 +1,6 @@
 <template>
   <footer>
-    Main Footer
+    
   </footer>
 </template>
 
@@ -13,3 +13,4 @@ export default {
 <style scoped>
 
 </style>
+$base-color:

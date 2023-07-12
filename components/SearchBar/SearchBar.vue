@@ -2,11 +2,12 @@
   <div class="search-bar relative">
     <div class="text-slate-800 h-8">
       <input
-          class="border-red px-4 h-full w-full"
+          class="border-red px-4 h-full w-full text-main-content/10"
           type="text"
+          placeholder="Search"
       >
       <Icon
-        class="icon absolute right-2 top-1/2"
+        class="icon absolute left-2 top-1/2"
         size="24"
         name="material-symbols:search"
       />
@@ -27,10 +28,18 @@ export default {
     border-color: transparent;
     user-select: none;
     outline: none;
+    background: rgba(217,217,217,.1);
+    color: rgba(228,230,235,.7);
   }
+
+input[type="text"]::placeholder {
+  text-indent: 22px;
+  font-size: 1.2rem;
+}
 
   .icon {
     transform: translateY(-50%);
+    color: rgba(228,230,235,.7);
   }
 }
 </style>
