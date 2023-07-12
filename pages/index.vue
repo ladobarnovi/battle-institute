@@ -6,17 +6,17 @@
                     <Swiper :loop="true">
                         <SwiperSlide>
                             <div class="slide-wrapper relative">
-                                <img src="/images/banner/banner1.png" alt="">
+                                <img src="/images/banners/banner1.png" alt="">
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div class="slide-wrapper relative">
-                                <img src="/images/banner/banner1.png" alt="">
+                                <img src="/images/banners/banner2.png" alt="">
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div class="slide-wrapper relative">
-                                <img src="/images/banner/banner1.png" alt="">
+                                <img src="/images/banners/banner1.png" alt="">
                             </div>
                         </SwiperSlide>
                     </Swiper>
@@ -26,72 +26,24 @@
                 <div class="w-[85vw] mx-auto h-full flex flex-col">
                     <h2 class="text-main-content text-4xl mb-4">Featured Courses</h2>
                     <div class="grid grid-rows-2 grid-flow-col gap-4 grow">
-                            <NuxtLink to="/course/1" class="row-span-2 col-span-2 thumbnail thumbnail-1 rounded-2xl"></NuxtLink>
-                        <NuxtLink to="/course/1" class="col-span-1 bg-white thumbnail thumbnail-2 rounded-2xl"></NuxtLink>
-                        <NuxtLink to="/course/1" class="col-span-1 bg-black thumbnail thumbnail-3 rounded-2xl"></NuxtLink>
+                        <NuxtLink to="/course/1"
+                                  class="row-span-2 col-span-2 thumbnail thumbnail-1 rounded-2xl"></NuxtLink>
+                        <NuxtLink to="/course/1"
+                                  class="col-span-1 bg-white thumbnail thumbnail-2 rounded-2xl"></NuxtLink>
+                        <NuxtLink to="/course/1"
+                                  class="col-span-1 bg-black thumbnail thumbnail-3 rounded-2xl"></NuxtLink>
                     </div>
                 </div>
             </section>
         </div>
     </div>
-
-
-    <!--<div class="bg-base-color-comp w-full">-->
-    <!--      <CardList-->
-    <!--          class="pt-8 w-[95vw] mx-auto"-->
-    <!--          :arr-cards-data="arrCourses"-->
-    <!--          title="Featured Courses"-->
-    <!--      />-->
-    <!--</div>-->
-    <!-- <div class="w-[95vw] mx-auto">-->
-    <!--      <CardList-->
-    <!--          class="pt-8 w-[95vw] mx-auto"-->
-    <!--          :arr-cards-data="arrInstructors"-->
-    <!--          title="Featured Instructors"-->
-    <!--      />-->
-    <!--</div>-->
 </template>
 
 <script lang="ts">
-import {ICardDataProp} from "~/components/Card/Card.vue";
 
 export default {
     name: "index",
     setup() {
-        const arrCourses: ICardDataProp[] = [
-            {
-                name: "First aid fundamentals",
-                img: "/images/tn1.png"
-            },
-            {
-                name: "Close quarter combat",
-                img: "/images/tn2.png"
-            },
-            {
-                name: "First aid fundamentals",
-                img: "/images/tn1.png"
-            }
-        ];
-
-        const arrInstructors: ICardDataProp[] = [
-            {
-                name: "Brian Bowen",
-                img: "/images/instructor/inst_1.jpg"
-            },
-            {
-                name: "Tyler Romero",
-                img: "/images/instructor/inst_2.jpg"
-            },
-            {
-                name: "Ed Webster",
-                img: "/images/instructor/inst_3.jpg"
-            }
-        ];
-
-        return {
-            arrCourses,
-            arrInstructors
-        }
     }
 }
 </script>
@@ -143,16 +95,20 @@ export default {
     background-position: bottom;
 }
 
+.thumbnail:hover {
+    filter: grayscale(100%);
+}
+
 .thumbnail-1 {
-    background-image: url("/images/tn1.png");
+    background-image: url("/images/thumbnails/tn1.png");
 }
 
 .thumbnail-2 {
-    background-image: url("/images/tn2.png");
+    background-image: url("/images/thumbnails/tn2.png");
 }
 
 .thumbnail-3 {
-    background-image: url("/images/tn3.png");
+    background-image: url("/images/thumbnails/tn3.png");
 }
 
 </style>

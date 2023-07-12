@@ -1,11 +1,10 @@
 <template>
-  <header class="h-16 bg-base-color text-white" :class="{'main-page-header': routeName == 'index'}">
-    <!--<div>-->
+  <header class="h-16 bg-base-color text-white">
       <div class="px-4 h-[64px]">
         <div class="flex items-center h-full gap-4">
           <div class="logo">
             <a href="/">
-              <img src="/images/BI.svg" class="h-[170px]">
+              <img src="/images/pb.svg" class="w-[370px] mt-[10px]">
             </a>
           </div>
           <SearchBar class="mr-auto" />
@@ -21,7 +20,6 @@
 
         </div>
       </div>
-     <!--</div>-->
   </header>
 </template>
 
@@ -31,10 +29,6 @@ export default {
   name: "MainHeader",
   components: {SearchBar},
   setup () {
-    const routeName = computed(() => {
-      return useRoute().name
-    })
-    return { routeName }
   }
 }
 </script>
@@ -42,11 +36,6 @@ export default {
 <style scoped lang="scss">
 
 .main-page-header{
-//  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/banner/banner1.png");
-//  background-attachment: fixed;
-//  background-size: cover;
-//  background-position: center;
-//  height: 100vh;
 }
 
 header {
