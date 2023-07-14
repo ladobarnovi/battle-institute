@@ -2,17 +2,12 @@
   <div class="card">
     <div class="wrapper relative">
       <img
-        class="absolute top-0 left-0 w-full h-full object-center object-cover"
+        class="absolute top-0 left-0 w-full h-full object-center object-cover rounded-md"
         :src="data.img"
         :alt="data.name"
       />
-
-      <div class="absolute bottom-0 left-0 w-full">
-        <div class="name-wrapper px-4 py-1">
-          <p class="text-white text-xl">{{ data.name }}</p>
-        </div>
-      </div>
     </div>
+    <p class="text-main-content text-2xl font-medium my-4">{{ data.name }}</p>
   </div>
 </template>
 
