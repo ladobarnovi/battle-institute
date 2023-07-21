@@ -47,14 +47,18 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="course-display flex gap-4 my-8" >
+                    <div class="course-display flex gap-4 my-8">
                         <div v-for="course in currentCourses">
-                            <NuxtLink to="/course/1"><img class="course-tn" :src="course.img"></NuxtLink>
-                            <div class="flex flex-col mt-2">
-                                <p class="text-2xl font-bold">{{course.title}}</p>
-                                <p class="text-xl">{{course.author}}</p>
-                                <p class="">{{course.duration}}</p>
-                            </div>
+                            <NuxtLink to="/course/1">
+                                <img class="course-tn" :src="course.img">
+                                <div class="flex flex-col mt-2">
+                                    <p class="text-2xl font-bold">{{ course.title }}</p>
+                                    <p class="text-xl">{{ course.author }}</p>
+                                    <p class="">{{ course.duration }}</p>
+                                </div>
+
+                            </NuxtLink>
+
                         </div>
                     </div>
                 </div>
