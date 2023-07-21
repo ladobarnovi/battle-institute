@@ -1,21 +1,63 @@
 <template>
-    <div class="flex text-main-content">
-        <section class="profile-info flex flex-col w-1/4 py-4">
-            <div class="mx-auto">
+    <div class="flex text-main-content gap-4">
+        <section
+            class="profile-info flex flex-col w-1/4 py-4 bg-base-color-comp border-r border-t border-main-content/10 h-[100vh]">
+            <div class="mx-auto my-8">
                 <img class="profile-picture rounded-full" src="/images/profiles/profile.png" alt="Profile picture">
-                <div class="profile-summary flex flex-col">
-                    <p class="text-4xl py-1 text-center">John Smith</p>
-                    <p class="text-xl py-1 text-center">Firearms enthusiast</p>
-                    <a class="text-xl py-1 text-center text-link-color" href="/">John Smith Portfolio</a>
+                <div class="profile-summary flex flex-col text-center">
+                    <p class="text-4xl py-1">John Smith</p>
+                    <p class="text-xl py-1">Firearm enthusiast</p>
+                    <a class="text-xl py-1 text-link-color" href="/">John Smith Portfolio</a>
                 </div>
             </div>
             <hr class="divider">
-            <div class="mx-auto personal-stats">
+            <div class="mx-auto personal-stats text-center">
                 <p class="">Courses joined: 4</p>
                 <p class="">Courses completed: 1</p>
                 <p class="">Currently doing: 3</p>
                 <p class="">Favorite category: First aid</p>
             </div>
+        </section>
+
+        <section class="profile-content flex flex-col w-3/4 gap-4">
+            <div class="mx-28">
+                <div class="profile-goals max-w-4xl">
+                    <h2 class="text-3xl font-bold py-4 ">My Goals</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Tellus cras adipiscing enim eu turpis egestas.
+                        Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Amet nisl suscipit
+                        adipiscing bibendum. Dignissim convallis aenean et tortor at risus.
+                        Ipsum suspendisse ultrices gravida dictum. Eu non diam phasellus vestibulum lorem. Lectus
+                        vestibulum
+                        mattis ullamcorper velit sed.
+                        Posuere morbi leo urna molestie at elementum eu. Molestie at elementum eu facilisis sed odio
+                        morbi.
+                        Dictum sit amet justo donec enim diam vulputate ut pharetra.</p>
+                </div>
+                <div class="profile-courses">
+                    <h2 class="text-3xl font-bold py-4 mt-8">Courses</h2>
+                    <nav class="class-nav">
+                        <ul>
+                            <li>
+                                <a href="">Currently Enrolled</a>
+                                <a href="">Purchased Courses</a>
+                                <a href="">Wishlist</a>
+                                <a href="">Reviews</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="course-display flex gap-4 my-8">
+                        <NuxtLink to="/course/1"><img class="course-tn" src="/images/thumbnails/tn1.png"></NuxtLink>
+                        <div class="flex flex-col ">
+                            <p class="text-2xl font-bold">First aid essentials</p>
+                            <p class="text-xl">Jonathan Winters</p>
+                            <p class="">3h 20m</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
     </div>
@@ -48,6 +90,22 @@ export default {
         margin-top: 3px;
         margin-bottom: 3px;
     }
+}
+
+.class-nav {
+    ul {
+        li {
+            a {
+                margin: 25px;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}
+
+.course-tn {
+    width: 350px
 }
 
 
