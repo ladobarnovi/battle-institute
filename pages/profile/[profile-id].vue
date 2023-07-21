@@ -1,7 +1,7 @@
 <template>
     <div class="flex text-main-content gap-4">
         <section
-            class="profile-info flex flex-col w-1/4 py-4 bg-base-color-comp border-r border-t border-main-content/10 h-[100vh]">
+            class="profile-info flex flex-col w-1/4 py-4 bg-base-color-comp border-r border-t border-main-content/10 min-h-[calc(100vh-64px)]">
             <div class="mx-auto my-8">
                 <img class="profile-picture rounded-full" src="/images/profiles/profile.png" alt="Profile picture">
                 <div class="profile-summary flex flex-col text-center">
@@ -47,12 +47,14 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="course-display flex gap-4 my-8">
-                        <NuxtLink to="/course/1"><img class="course-tn" src="/images/thumbnails/tn1.png"></NuxtLink>
-                        <div class="flex flex-col ">
-                            <p class="text-2xl font-bold">First aid essentials</p>
-                            <p class="text-xl">Jonathan Winters</p>
-                            <p class="">3h 20m</p>
+                    <div class="course-display flex gap-4 my-8" >
+                        <div v-for="course in currentCourses">
+                            <NuxtLink to="/course/1"><img class="course-tn" :src="course.img"></NuxtLink>
+                            <div class="flex flex-col mt-2">
+                                <p class="text-2xl font-bold">{{course.title}}</p>
+                                <p class="text-xl">{{course.author}}</p>
+                                <p class="">{{course.duration}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -67,8 +69,38 @@
 
 export default {
     name: "[profile-id]",
-    components: {}
+    components: {},
+    setup() {
+        const currentCourses = [
+            {
+                img: "/images/thumbnails/tn1.png",
+                title: "First aid essentials",
+                author: "Jonathan Winters",
+                duration: "3h 20m"
+            },
+            {
+                img: "/images/thumbnails/tn2.png",
+                title: "Close quarter combat",
+                author: "Ethan Starynski",
+                duration: "1h 45m"
+            },
+            {
+                img: "/images/thumbnails/tn3.png",
+                title: "Underwater fundamentals",
+                author: "Nick Gonzalez",
+                duration: "6h 12m"
+            },
+
+        ]
+
+        return {
+            currentCourses
+        }
+
+    }
 }
+
+// TODO: Change the list of currentCourses to purchasedCourses etc on click
 </script>
 
 <style scoped lang="scss">
