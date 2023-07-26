@@ -4,19 +4,9 @@
             <section class="slider-container bg-base-color-comp">
                 <div class="rounded-xl overflow-hidden">
                     <Swiper :loop="true">
-                        <SwiperSlide>
+                        <SwiperSlide v-for="banner in banners">
                             <div class="slide-wrapper relative">
-                                <img src="/images/banners/banner1.png" alt="">
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div class="slide-wrapper relative">
-                                <img src="/images/banners/banner2.png" alt="">
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div class="slide-wrapper relative">
-                                <img src="/images/banners/banner1.png" alt="">
+                                <img :src="banner.url" alt="">
                             </div>
                         </SwiperSlide>
                     </Swiper>
@@ -44,6 +34,45 @@
 export default {
     name: "index",
     setup() {
+        const banners = [
+            {
+                url: '/images/banners/b1.png'
+            },
+            {
+                url: '/images/banners/b2.png'
+            },
+            {
+                url: '/images/banners/b3.png'
+            },
+            {
+                url: '/images/banners/b4.png'
+            },
+            {
+                url: '/images/banners/b5.png'
+            },
+            {
+                url: '/images/banners/b6.png'
+            },
+            {
+                url: '/images/banners/b7.png'
+            },
+            {
+                url: '/images/banners/b8.png'
+            },
+            {
+                url: '/images/banners/b9.png'
+            },
+            {
+                url: '/images/banners/b10.png'
+            },
+            {
+                url: '/images/banners/b11.png'
+            }
+        ]
+
+        return {
+            banners
+        }
     }
 }
 </script>

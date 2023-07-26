@@ -21,20 +21,6 @@
 
         <section class="profile-content flex flex-col w-3/4 gap-4">
             <div class="mx-28">
-                <div class="profile-goals max-w-4xl">
-                    <h2 class="text-3xl font-bold py-4 ">My Goals</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Tellus cras adipiscing enim eu turpis egestas.
-                        Amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Amet nisl suscipit
-                        adipiscing bibendum. Dignissim convallis aenean et tortor at risus.
-                        Ipsum suspendisse ultrices gravida dictum. Eu non diam phasellus vestibulum lorem. Lectus
-                        vestibulum
-                        mattis ullamcorper velit sed.
-                        Posuere morbi leo urna molestie at elementum eu. Molestie at elementum eu facilisis sed odio
-                        morbi.
-                        Dictum sit amet justo donec enim diam vulputate ut pharetra.</p>
-                </div>
                 <div class="profile-courses">
                     <h2 class="text-3xl font-bold py-4 mt-8">Courses</h2>
                     <nav class="class-nav">
