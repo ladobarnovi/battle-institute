@@ -1,0 +1,1 @@
+import{s as e,o,l as n,E as s}from"./entry.1f2b4186.js";const _={name:"BtlButton"},c={class:"text-center h-12 w-full font-semibold text-lg"};function l(t,a,r,d,u,p){return o(),n("button",c,[s(t.$slots,"default",{},void 0,!0)])}const B=e(_,[["render",l],["__scopeId","data-v-36c93611"]]);export{B};
